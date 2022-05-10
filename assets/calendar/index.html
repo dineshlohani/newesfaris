@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+	<title>Nepali Calendar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	
+	<script type="text/javascript" src="nepali.datepicker.v2.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="nepali.datepicker.v2.1.min.css" />
+</head>
+<body>
+	<div class="container">
+		<h2>Nepali Calendar</h2>
+		
+		<h3>Datepicker with button</h3>
+		<input type="text" id="nepaliDate3" class="nepali-calendar" value=""/>
+		
+	</div>
+
+	
+</body>
+</html>
+<script>
+	$(document).ready(function(){
+		
+		
+		$('#nepaliDate3').nepaliDatePicker({
+			onFocus: false,
+			npdMonth: true,
+			npdYear: true,
+			ndpTriggerButton: true,
+			ndpTriggerButtonText: 'Date',
+			ndpTriggerButtonClass: 'btn btn-primary btn-sm'
+		});
+
+
+		
+	});
+</script>
